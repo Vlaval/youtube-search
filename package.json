@@ -1,0 +1,24 @@
+{
+  "name": "youtube-search",
+  "version": "1.0.0",
+  "description": "app for searching in youtube",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Vlaval/youtube-search.git"
+  },
+  "keywords": [
+    "node",
+    "koa",
+    "youtube"
+  ],
+  "author": "Vladimir Valitov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Vlaval/youtube-search/issues"
+  },
+  "homepage": "https://github.com/Vlaval/youtube-search#readme"
+}
