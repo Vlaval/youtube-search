@@ -27,13 +27,11 @@
     "config": "^3.1.0",
     "koa": "^2.7.0",
     "koa-bodyparser": "^4.2.1",
-    "koa-favicon": "^2.0.1",
     "koa-logger": "^3.2.0",
     "koa-router": "^7.4.0",
     "koa-static": "^5.0.0",
     "lodash": "^4.17.11",
     "mongoose": "^5.5.6",
-    "node-fetch": "^2.5.0",
     "pug": "^2.0.3"
   }
 }

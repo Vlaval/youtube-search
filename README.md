@@ -1,5 +1,9 @@
 # youtube-search
 
+install node packages
+
+`npm i`
+
 run app locally
 
 `npm start`

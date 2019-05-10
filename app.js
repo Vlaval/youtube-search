@@ -1,11 +1,8 @@
 const Koa = require('koa');
-const config = require('config');
 const Router = require('koa-router');
-const favicon = require('koa-favicon');
 const serve = require('koa-static');
 const logger = require('koa-logger');
 const bodyParser = require('koa-bodyparser');
-const fetch = require('node-fetch');
 const pick = require('lodash/pick');
 
 const mongoose = require('./libs/mongoose');
@@ -15,7 +12,6 @@ const errorsHandler = require('./handlers/errorsHandler');
 
 const app = new Koa();
 
-app.use(favicon('public/favicon.ico'));
 app.use(serve('public'));
 app.use(logger());
 app.use(templatesHandler);
