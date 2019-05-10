@@ -1,0 +1,27 @@
+doctype html
+html
+  head
+    meta(charset='utf-8')
+    link(href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.4/css/bootstrap.min.css', rel='stylesheet')
+  body.container
+    p.lead Youtube search
+    form#search.form-inline
+      input#search-input(type='text', name='query')
+      input.btn.btn-primary(type='submit', value='search')
+    ul#results
+    div.row
+      div.col-xs-4
+        div
+          h2 Watch history
+          ul#history
+            each val in recordsPublic
+              li
+                a(data-video-id=val.videoId, onclick='loadVideo(event)')= val.title
+                button.btn.btn-primary(data-id=val._id, onclick='deleteRecord(event)') delete
+      div.col-xs-8
+        div
+          h2 player
+          div(id='player')
+
+    script(src="/main.js")
+    script(src="/youtube-player.js")
